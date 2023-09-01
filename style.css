@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 254, 254, 0.71);
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 70vw;
+    height: 95vh;
+    margin: 5%;
+    background-color: #222832;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 7%;
+}
+
+img{
+    width:15vw;
+    padding-bottom: 30px;
+}
+.container .search{
+    display: flex;
+    padding-bottom: 5px;
+    margin: 2vw 9vw;
+    justify-content: space-around;
+    align-items: center;
+}
+#inp{
+    width: 100%;
+    height: 7vh;
+    font-size: 1.5vw;
+    padding: 2px;
+    margin-right: 1.2vw;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: skyblue;
+
+}
+::placeholder{
+    color: white;
+}
+#btn{
+    font-size: 1.5vw;
+    height: 7vh;
+    padding: 4px 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: none;
+    background-color: skyblue;
+       
+}
+
+h2{
+    font-size: 3vw;
+    opacity: 80%;
+  
+}
+#temp{
+    margin-top: -2.5vw;
+    margin-bottom: 1vw;
+    font-size: 3vw;
+   
+}
+#type{
+    margin-top: -11px;
+   
+}
+
+
+.whether-detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2vw;
+
+}
+
+.whether-detail img{
+    height: 5vw;
+    width: 5vw;
+  
+}
+
+.whether-detail p{
+    font-size: 1.5vw;
+   
+   
+}
+.whether-detail span{
+    font-size: 1.7vw;
+    font-weight: 700;
+    
+}
+
+
+
+@media (max-width:700px) {
+    /* *{
+        color: #000;
+    } */
+    .container{
+        display: grid;
+     grid-template-columns: repeat(1,1fr);
+        width:90%;
+        margin: auto;
+        height: 100vh;
+        padding: 20px;
+        position: fixed;
+        background-color:  #222832;
+       
+    }
+
+    .search{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+         top: -3vh;
+       
+
+    }
+
+    img{
+        width:50%;
+        margin: auto;
+    }
+
+    .whether-detail img{
+        height: 35px;
+        width: 35px;
+    }
+    h2{
+        font-size: 50px;
+        opacity: 80%;
+    }
+    #inp{
+        font-size: 15px;
+        padding: 2px;
+        width: 100%;
+        height:7vh;
+      
+    }
+    ::placeholder{
+        /* color: black; */
+    }
+    #btn{
+        font-size: 15px;
+        padding: 4px 10px;
+         height: 7vh;
+    }
+
+    #temp{
+        
+        margin-bottom: 1vw;
+        font-size: 40px;
+    }
+   
+
+.whether-detail p{
+    font-size: 15px;
+   
+}
+.whether-detail span{
+    font-size: 17px;
+    font-weight: 700;
+}
+    
+}
